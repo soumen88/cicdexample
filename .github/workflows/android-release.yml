@@ -44,10 +44,8 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Start APK build
-        run: |
-          flutter pub get
-          flutter build apk
+        run: flutter build apk
       - uses: actions/upload-artifact@v1
         with:
-          name: debug-apk
-          path: build/app/outputs/flutter-apk/app-debug.apk
+          name: release-apk
+          path: build/app/outputs/apk/release/app-release.apk
