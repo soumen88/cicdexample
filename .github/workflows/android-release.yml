@@ -35,14 +35,14 @@ jobs:
           flutter-version: "3.3.0"
           channel: 'stable'
           cache: true
-      # 11
+      # 12
       - name: Flutter upgrade
         run: flutter upgrade --force
-      # 12
+      # 13
       - name: Get dependencies
         run: flutter pub get
 
-      # Runs a set of commands using the runners shell
+      #14 Runs a set of commands using the runners shell
       - name: Start APK build
         run: flutter build apk
       - uses: actions/upload-artifact@v1
